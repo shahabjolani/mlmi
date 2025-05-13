@@ -1,3 +1,5 @@
+# this function estimates and extracts the parameters of the random-effects models  
+# it has a similar functionality as the 'estimice' function for mice.impute.norm
 lmer.est <- function(xobs, yobs, type, clust, rande, fixe){
   #install.on.demand("lme4", ...)
   fr <- ifelse(length(rande) > 1, paste("+ ( 1 +", paste(rande[-1L], 
