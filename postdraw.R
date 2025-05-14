@@ -1,3 +1,4 @@
+# this function draws parameters
 lmer.draw <- function(xobs, yobs, type, clust, rande, fixe, lev, X, Z, Xobs, Zobs){
   est <- lmer.est(xobs, yobs, type, clust, rande, fixe)
   sigma2star <- est$df * est$sigmahat^2/rchisq(1, est$df)
