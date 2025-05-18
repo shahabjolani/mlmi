@@ -1,3 +1,5 @@
+# This function estimates and extracts the random-effects model parameters
+# It performs a similar job as the 'estimice()' function within '.norm.draw()'
 lmer.est <- function(xobs, yobs, type, clust, rande, fixe){
   #install.on.demand("lme4", ...)
   fr <- ifelse(length(rande) > 1, paste("+ ( 1 +", paste(rande[-1L], 
