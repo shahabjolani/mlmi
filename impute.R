@@ -1,3 +1,5 @@
+# For now, it is called '2l.lmer.me'
+# I am unsure whether the model argument is correctly specified when task == "train". Please check!
 mice.impute.2l.lmer.me <- function (y, ry, x, type, wy = NULL, intercept = TRUE, task = "impute", model = NULL, ...){
   check.model.exists(model, task)
   method <- "2l.lmer.me"
